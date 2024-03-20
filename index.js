@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 const Target = await inquirer.prompt([{
         message: "Enter Your First Number",
@@ -26,5 +27,5 @@ else if (Target.operator === "division") {
     console.log(Target.Num1 / Target.Num2);
 }
 else if (Target.operator === "Multiplication") {
-    console.log(Target.Num1 + Target.Num2);
+    console.log(Target.Num1 * Target.Num2);
 }
